@@ -1,0 +1,142 @@
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ece9e9;
+}
+
+.container {
+    width: 80%;
+}
+
+/* Header start */
+header {
+    background-color: #329bdb;
+    width: 98%;
+    height: auto;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav_bar_title {
+    font-size: 30px;
+    text-align: left;
+    padding: 10px 10px;
+    color: #e6dddd;
+}
+
+.nav_bar_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+.nav_link a {
+    text-decoration: none;
+    background-color: #377fab;
+    color: #e6dddd;
+    border-radius: 5px;
+    margin: 2px 4px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav_link a:hover {
+    background-color: #e6dddd;
+    color: #329bdb;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header end */
+
+/* Main start */
+.wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0px;
+    max-width: 98%;
+
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 98%;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+.main {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 78%;
+
+    border-radius: 8px;
+}
+
+.main>section>ul li {
+    list-style: none;
+}
+
+/* Main end */
+
+/* Aside start */
+aside {
+    background-color: #284674;
+    width: 19%;
+    border-radius: 8px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    align-self: ;
+}
+
+.aside_title {
+    color: #e6dddd;
+    font-size: 25px;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.aside_paragraph {
+    color: #cbc6c6;
+    font-size: 0.65rem;
+    text-align: left;
+    padding: 5px 0px;
+}
+
+.aside_list {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.aside_list li {
+    background-color: #377fab;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.aside_list li a {
+    text-decoration: none;
+    color: #284674;
+    font-size: 0.85rem;
+}
+
+/* Aside end */

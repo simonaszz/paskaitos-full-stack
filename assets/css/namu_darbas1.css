@@ -1,0 +1,53 @@
+header {
+    background-color: pink;
+}
+aside {
+    background-color: aquamarine;
+}
+main {
+    background-color: burlywood;
+}
+footer {
+    background-color: dimgray;
+    color: white;
+}
+.container > * {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.content {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+ 
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* after */
+.container > * {
+   max-width: 1200px;
+   text-align: center;
+   font-size: 0;
+}
+header, footer {
+    width: 100%;
+  display: inline-block;
+  font-size: initial;
+}
+aside, main {
+    font-size: initial;
+    display: inline-block;
+    vertical-align: top;
+}
+main{
+    width: 814px;
+}
+aside {
+    width: 300px;
+    
+}

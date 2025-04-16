@@ -1,0 +1,36 @@
+.sachmatai {
+    display: flex;
+    flex-wrap: wrap;
+    width: 625px;
+}
+
+
+.sachmatai > div{
+width: 75px;
+height: 75px;
+margin: 5px;
+padding: 10px;
+border: 2px solid #000;
+align-content: center;
+
+}
+.sachmatai > div:nth-child(odd) {
+    background-color: #444;
+  }
+  
+  .sachmatai > div:nth-child(even) {
+    background-color: #a2c8d2;
+  }
+  .sachmatai > div:nth-child(4),
+  .sachmatai > div:nth-child(8),
+  .sachmatai > div:nth-child(12) {
+    background-color: lightgreen;
+  }
+  .sachmatai > div:nth-child(16),
+.sachmatai > div:nth-child(18),
+.sachmatai > div:nth-child(20),
+.sachmatai > div:nth-child(22),
+.sachmatai > div:nth-child(24) {
+    background-color: lightblue;
+  background-color: lightpink;
+}
