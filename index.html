@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>index</title>
-  </head>
-  <body>
-    <header>
-      <h1>Mano puslapis</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Pagrindinis</a></li>
-          <li><a href="pages/duomenys.html">Duomenys</a></li>
-          <li><a href="pages/kontaktai.html">Kontaktai</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Tai yra antraštė</h1>
-    <p>Tai yra paragrafas.</p>
-    <div>o čia yra turinio skyrius</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- namu darbas -->
+        <link rel="stylesheet" href="assets/css/namu_darbas.css" /> 
+        <!-- <link rel="stylesheet" href="assets/css/namu_darbas1.css" />Klases darbas  -->
+        <title>Užduotis Namų Darbas</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="nav_bar_title">Mano puslapis</h1>
+                <nav>
+                    <ul class="nav_bar_list">
+                        <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
+                        <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
+                        <li class="nav_link"><a class="border_radius" href="pages/kontaktai.html">Kontaktai</a></li>
+                        <li class="nav_link"><a class="border_radius" href="pages/sachmatai.html">Šachmatai</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="wrap content">
+                <main class="main">
+                    <section>
+                        <h2>Pagrindinis skyrius</h2>
+                        <p>Tai yra pagrindinio skyriaus turinys</p>
+                        <h3>Tai yra antraštė</h3>
+                        <p>Tai yra paragrafas.</p>
+                        <p>O čia yra turinio skyrius. ......**********************</p>
+                    </section>
+                    <hr />
+                    <section>
+                        <h2>Apie mus</h2>
+                        <p>Tai yra apie mus skyriaus turiinyys</p>
+                        <ul>
+                            <li><strong>Bold text</strong></li>
+                            <li><span style="color: red">Important text</span></li>
+                            <li><em>Italic text</em></li>
+                            <li><i>Emphasized text</i></li>
+                            <li><mark>Marked text</mark></li>
+                            <li><small>Small text</small></li>
+                            <li><del>Deleted text</del></li>
+                            <li><ins>Inserted text</ins></li>
+                            <li><sub>Subscript text</sub></li>
+                            <li><sup>Superscript text</sup></li>
+                        </ul>
+                    </section>
+                </main>
+                <aside>
+                    <h2 class="aside_title">Šoninė juosta</h2>
+                    <p class="aside_paragraph">Tai yra šoninės juostos turinys.</p>
 
-    <main>
-      <h1>Pirmoji antraštė H1</h1>
-      <p>Pirmas paragrafas po pirmos antraštės</p>
-      <p>Antras paragrafas po pirmos antraštės</p>
-      <p>Trečias paragrafas po pirmos antraštės</p>
+                    <ul class="aside_list">
+                        <li><a href="#">Nuoroda 1</a></li>
+                        <li><a href="#">Nuoroda 2</a></li>
+                        <li><a href="#">Nuoroda 3</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <footer>
 
-      <h2>Antroji antraštė H2</h2>
-      <p>Pirmas paragrafas po antros antraštės</p>
+            </footer>
+        </div>
 
-      <p>
-        Antras paragrafas po antros antraštės su :
-        <b>pastorintu</b>
-        <i>pasvirusiu</i>
-        <u>pabrauktu</u>
-        <mark>pažymėtu</mark>
-        <small>sumažintu</small>
-        <del>perbrauktu</del>
-        <sub>apatiniu indeksu</sub> , taip pat su
-        <sup>viršutiniu indeksu</sup> Vienas žodis yra
-        <b
-          ><u><i>ypač</i></u></b
-        >
-        išskirtas.
-      </p>
-
-      <a href="duomenys.html">Duomenys</a>
-    </main>
-  </body>
+    </body>
 </html>
