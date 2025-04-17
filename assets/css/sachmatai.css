@@ -1,12 +1,12 @@
-/* .sachmatai {
+.sachmatai {
   display: flex;
   flex-wrap: wrap;
   width: 600px;
-} */
-.sachmatai>div {
-  display: inline-block;
-  /* width: 600px; */
 }
+/* .sachmatai>div {
+  display: inline-block; */
+  /* width: 600px; */
+
 
 .sachmatai {
   width: 600px;
@@ -30,7 +30,7 @@
   background-color: #a2c8d2;
 }
 
-.sachmatai>div:nth-child(4n) {
+.sachmatai>div:nth-child(4n +4) {
   background-color: lightgreen;
 }
 
