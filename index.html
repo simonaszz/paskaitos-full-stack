@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- namu darbas -->
     <link rel="stylesheet" href="assets/css/namu_darbas.css" />
@@ -11,8 +12,18 @@
 <body>
 <div class="container">
     <header>
-        <h1 class="nav_bar_title">Mano puslapis</h1>
-        <nav>
+        <h1 class="nav">Mano puslapis</h1>
+        <nav class="desktop">
+            <ul class="nav_bar_list ">
+                <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
+                <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
+                <li class="nav_link"><a class="border_radius" href="pages/kontaktai.html">Kontaktai</a></li>
+                <li class="nav_link"><a class="border_radius" href="pages/sachmatai.html">Šachmatai</a></li>
+                <li class="nav_link"><a class="border_radius" href="pages/portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <!-- mobile -->
+        <nav class="mobile">
             <ul class="nav_bar_list">
                 <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
                 <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
@@ -21,6 +32,9 @@
                 <li class="nav_link"><a class="border_radius" href="pages/portfolio.html">Portfolio</a></li>
             </ul>
         </nav>
+
+
+
     </header>
     <div class="wrap content">
         <main class="main">
