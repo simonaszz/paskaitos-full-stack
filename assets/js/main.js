@@ -1,5 +1,7 @@
 console.log("Hello world");
 const txt = "Labas pasauli";
+const txt = "Labas pasauli";
+console.log(txt);
 console.log(txt);
 let i = 0;
 const ii = 22;
