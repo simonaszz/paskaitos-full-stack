@@ -10,7 +10,7 @@
         <title>Užduotis Namų Darbas</title>
     </head>
     <body>
-        <div class="container">
+        <div id="menu" class="container">
             <header>
                 <h1 class="nav" id="antraste">Mano puslapis</h1>
                 <nav class="desktop">
@@ -34,8 +34,8 @@
                 </nav>
             </header>
             <div class="wrap content">
-                <main class="main">
-                    <section>
+                <main class="main" id="rezultatas">
+                    <section id="knygynasS">
                         <h2>Pagrindinis skyrius</h2>
                         <p>Tai yra pagrindinio skyriaus turinys</p>
                         <h3>Tai yra antraštė</h3>
@@ -43,19 +43,40 @@
                         <p>O čia yra turinio skyrius. ......**********************</p>
                     </section>
                     <hr />
-                    <section>
+                    <section  id="knygynas">
                         <h2>Apie mus</h2>
+
+
+
+                        <div id="as"></div>
+                      <div id="pasisveikinimas"></div>
+
+                        <b>Eilerastis</b><br><br>
+                        <div id="eilerastis"></div>
+                        <div id="sudetis" ></div>
+                        <div id="atimtis" ></div>
+                        <div id="dalyba" ></div><br>
+                        <span id="automobiliai"></span>
+
+
+
                         <h3>uzduoties atsakymas: <span id="atsakymas"></span></h3>
                         <p>Tai yra apie mus skyriaus turiinyys</p>
                         <ul>
                             <li><strong>Bold text</strong></li>
                             <li><span style="color: red">Important text</span></li>
                             <li><em>Italic text</em></li>
-                            <li><i>Emphasized text</i></li>
-                            <li>
+                            <li ><i>Emphasized text</i></li>
+                            <li id="contact"></li>
+                            <li id="atimtis"></li>
+                            <li id="daugyba"></li>
+                            <li></li>
+                            <li id="dalyba"></li>
+                            <li></li>
+                            <li id="zodziuIlgiai">
                                 <mark>Marked text</mark>
                             </li>
-                            <li><small>Small text</small></li>
+                            <li id="skaiciuMasyvas"><small>Small text</small></li>
                             <li>
                                 <del>Deleted text</del>
                             </li>
@@ -82,6 +103,8 @@
             <footer></footer>
         </div>
         <!-- <script src="assets/js/uzduotys.js" defer></script> -->
-        <script src="assets/js/masyvai.js" defer></script>
+        <!-- <script src="assets/js/masyvai.js" defer></script>
+        <script src="assets/js/objectai_isvedimas_html.js" defer></script> -->
+        <script src="assets/js/dom_manipulation.js" defer></script>
     </body>
 </html>
