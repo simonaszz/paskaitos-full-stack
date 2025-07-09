@@ -2,33 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- namu darbas -->
-        <!-- <link rel="stylesheet" href="assets/css/namu_darbas.css" /> -->
-        <!-- <link rel="stylesheet" href="assets/css/namu_darbas1.css" />Klases darbas  -->
-         <link href="./src/output.css" rel="stylesheet">
-
+        <link href="./src/output.css" rel="stylesheet" />
+         <script src="https://cdn.tailwindcss.com"></script>
         <title>Užduotis Namų Darbas</title>
     </head>
-  
     <body class="bg-[#ece9e9] flex justify-center items-center min-h-screen">
-
-
         <div id="menu" class="w-4/5">
-            <header class="bg-[#329bdb] rounded-lg shadow-lg">
+            <header class="bg-[#329bdb] rounded-lg shadow-lg p-4">
                 <h1 class="text-3xl font-bold text-[#e6dddd]" id="antraste">Mano puslapis</h1>
-                <nav class="desktop">
+                <nav class="desktop mt-2">
                     <ul class="flex gap-3 py-3 px-2">
                         <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/kontaktai.html">Kontaktai</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/sachmatai.html">Šachmatai</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/portfolio.html">Portfolio</a></li>
-                    </flex>
+                    </ul>
                 </nav>
                 <!-- mobile -->
-                <nav class="mobile">
+                <nav class="mobile hidden">
                     <ul class="nav_bar_list">
                         <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
@@ -39,97 +32,87 @@
                 </nav>
             </header>
 
+            <div class="mt-6">
+                <button id="medinis-bajeris" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Dad Joke</button>
+            </div>
 
-<div> 
-    <button id="medinis-bajeris" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-    Dad Joke
-</button>
-</div>
-<br>
-<div id="pagrindinis-skyrius" class="mt-4"></div><br>
+            <div id="pagrindinis-skyrius" class="mt-4"></div>
 
+            <div id="movie" class="mt-6">
+                <main id="rezultatas">
+                    <h1 class="text-2xl font-bold mb-4">Ieškoti TV šou</h1>
+                    <div class="flex gap-2 mb-4">
+                        <input type="text" id="searchInput" placeholder="Įvesk šou pavadinimą" class="border p-2 rounded w-full max-w-md" />
+                        <button onclick="handleSearch()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                            Ieškoti
+                        </button>
+                    </div>
 
-            <div id="movie" class="wrap content">
-                <main class="main" id="rezultatas">
+                    <div id="results" class="movie-container space-y-4"></div>
 
-
-  <h1>Ieškoti TV šou</h1>
-    <input type="text" id="searchInput" placeholder="Įvesk šou pavadinimą">
-    <button onclick="handleSearch()">Ieškoti</button>
-
-    <div id="results" class="movie-container"></div><br>
-
-                    
-                    <section id="knygynasS">
-                        <h2>Pagrindinis skyrius</h2>
+                    <section id="knygynasS" class="mt-8">
+                        <h2 class="text-xl font-semibold">Pagrindinis skyrius</h2>
                         <p>Tai yra pagrindinio skyriaus turinys</p>
-                        <h3>Tai yra antraštė</h3>
+                        <h3 class="text-lg font-medium mt-2">Tai yra antraštė</h3>
                         <p>Tai yra paragrafas.</p>
                         <p>O čia yra turinio skyrius. ......**********************</p>
                     </section>
-                    <hr />
-                    <section  id="knygynas">
-                        <h2>Apie mus</h2>
 
+                    <hr class="my-6" />
 
+                    <section id="knygynas">
+                        <h2 class="text-xl font-semibold">Apie mus</h2>
 
-                        <div id="as"></div>
-                      <div id="pasisveikinimas"></div>
+                        <div id="as" class="mt-4"></div>
+                        <div id="pasisveikinimas" class="mt-2"></div>
 
-                        <b>Eilerastis</b><br><br>
+                        <b class="block mt-4 mb-2">Eilėraštis</b>
                         <div id="eilerastis"></div>
-                        <div id="sudetis" ></div>
-                        <div id="atimtis" ></div>
-                        <div id="dalyba" ></div><br>
-                        <span id="automobiliai"></span>
 
+                        <div id="sudetis" class="mt-2"></div>
+                        <div id="atimtis1"></div>
+                        <div id="dalyba1"></div>
 
+                        <span id="automobiliai" class="block mt-2"></span>
 
-                        <h3>uzduoties atsakymas: <span id="atsakymas"></span></h3>
-                        <p>Tai yra apie mus skyriaus turiinyys</p>
-                        <ul>
+                        <h3 class="mt-4">Užduoties atsakymas: <span id="atsakymas"></span></h3>
+                        <p>Tai yra apie mus skyriaus turinys</p>
+
+                        <ul class="list-disc ml-6 mt-4 space-y-1">
                             <li><strong>Bold text</strong></li>
-                            <li><span style="color: red">Important text</span></li>
+                            <li><span class="text-red-600">Important text</span></li>
                             <li><em>Italic text</em></li>
-                            <li ><i>Emphasized text</i></li>
+                            <li><i>Emphasized text</i></li>
                             <li id="contact"></li>
-                            <li id="atimtis"></li>
+                            <li id="atimtis2"></li>
                             <li id="daugyba"></li>
                             <li></li>
-                            <li id="dalyba"></li>
+                            <li id="dalyba2"></li>
                             <li></li>
-                            <li id="zodziuIlgiai">
-                                <mark>Marked text</mark>
-                            </li>
+                            <li id="zodziuIlgiai"><mark>Marked text</mark></li>
                             <li id="skaiciuMasyvas"><small>Small text</small></li>
-                            <li>
-                                <del>Deleted text</del>
-                            </li>
-                            <li>
-                                <ins>Inserted text</ins>
-                            </li>
+                            <li><del>Deleted text</del></li>
+                            <li><ins>Inserted text</ins></li>
                             <li><sub>Subscript text</sub></li>
                             <li><sup>Superscript text</sup></li>
                         </ul>
                     </section>
                 </main>
-                <aside>
-                    <h2 class="aside_title">Šoninė juosta</h2>
-                    <p class="aside_paragraph">Tai yra šoninės juostos turinys.</p>
 
-                    <ul class="aside_list">
+                <aside class="mt-8">
+                    <h2 class="aside_title text-lg font-semibold">Šoninė juosta</h2>
+                    <p class="aside_paragraph">Tai yra šoninės juostos turinys.</p>
+                    <ul class="aside_list list-disc ml-6 mt-2">
                         <li><a href="#">Nuoroda 1</a></li>
                         <li><a href="#">Nuoroda 2</a></li>
                         <li><a href="#">Nuoroda 3</a></li>
                     </ul>
                 </aside>
             </div>
-            
-            <footer></footer>
+
+            <footer class="mt-6 text-center text-sm text-gray-600">© 2025 Mano puslapis</footer>
         </div>
-        <!-- <script src="assets/js/uzduotys.js" defer></script> -->
-        <!-- <script src="assets/js/masyvai.js" defer></script>
-        <script src="assets/js/objectai_isvedimas_html.js" defer></script> -->
+
         <script src="assets/js/dom_manipulation.js" defer></script>
         <script src="assets/js/api.js" defer></script>
     </body>
