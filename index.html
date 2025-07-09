@@ -5,22 +5,27 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- namu darbas -->
-        <link rel="stylesheet" href="assets/css/namu_darbas.css" />
+        <!-- <link rel="stylesheet" href="assets/css/namu_darbas.css" /> -->
         <!-- <link rel="stylesheet" href="assets/css/namu_darbas1.css" />Klases darbas  -->
+         <link href="./src/output.css" rel="stylesheet">
+
         <title>Užduotis Namų Darbas</title>
     </head>
-    <body>
-        <div id="menu" class="container">
-            <header>
-                <h1 class="nav" id="antraste">Mano puslapis</h1>
+  
+    <body class="bg-[#ece9e9] flex justify-center items-center min-h-screen">
+
+
+        <div id="menu" class="w-4/5">
+            <header class="bg-[#329bdb] rounded-lg shadow-lg">
+                <h1 class="text-3xl font-bold text-[#e6dddd]" id="antraste">Mano puslapis</h1>
                 <nav class="desktop">
-                    <ul class="nav_bar_list">
+                    <ul class="flex gap-3 py-3 px-2">
                         <li class="nav_link"><a class="border_radius" href="index.html">Pagrindinis</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/duomenys.html">Duomenys</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/kontaktai.html">Kontaktai</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/sachmatai.html">Šachmatai</a></li>
                         <li class="nav_link"><a class="border_radius" href="pages/portfolio.html">Portfolio</a></li>
-                    </ul>
+                    </flex>
                 </nav>
                 <!-- mobile -->
                 <nav class="mobile">
@@ -33,8 +38,28 @@
                     </ul>
                 </nav>
             </header>
-            <div class="wrap content">
+
+
+<div> 
+    <button id="medinis-bajeris" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    Dad Joke
+</button>
+</div>
+<br>
+<div id="pagrindinis-skyrius" class="mt-4"></div><br>
+
+
+            <div id="movie" class="wrap content">
                 <main class="main" id="rezultatas">
+
+
+  <h1>Ieškoti TV šou</h1>
+    <input type="text" id="searchInput" placeholder="Įvesk šou pavadinimą">
+    <button onclick="handleSearch()">Ieškoti</button>
+
+    <div id="results" class="movie-container"></div><br>
+
+                    
                     <section id="knygynasS">
                         <h2>Pagrindinis skyrius</h2>
                         <p>Tai yra pagrindinio skyriaus turinys</p>
@@ -106,5 +131,6 @@
         <!-- <script src="assets/js/masyvai.js" defer></script>
         <script src="assets/js/objectai_isvedimas_html.js" defer></script> -->
         <script src="assets/js/dom_manipulation.js" defer></script>
+        <script src="assets/js/api.js" defer></script>
     </body>
 </html>

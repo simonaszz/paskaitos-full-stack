@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ul {
+  li {
+    span {
+      color: blue;
+    }
+
+    &:nth-child(2) {
+      ul {
+        li:nth-child(2) {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      ul {
+        li:nth-child(3) {
+          span {
+            color: red;
+          }
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      ul {
+        li:nth-child(1) {
+          span {
+            color: red;
+          }
+        }
+      }
+    }
+
+    ul {
+      li:nth-child(even) {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+body {
+    background-color: red;
+}
